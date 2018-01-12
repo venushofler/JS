@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- 
+	   CIS213 Javascript Final Project
+
+	  
+	   Author:  Venus Hofler
+	   Date:    11/14/2016
+
+		Filename:   birthOfANation.html
+							
+		Supporting files:	myCin.js
+
+							angry.jpg									joneses.jpg			moana.jpg			ride.jpg				twice.jpg
+							arlo.jpg			dory.jpg				jungle.jpg			mrPete.jpg			sing.jpg				wedding.jpg
+							arrival.jpg			girl.jpg				kicks.jpg			ove.jpg				southside.jpg			what.jpg
+							barbershop3.jpg		globe.jpg				lala.jpg			parks.jpg			storks.jpg				zoolander.jpg
+							beautiful.jpg		hamlet.jpg				love.jpg			peculiar.jpg		sully.jpg
+							billy.jpg			harry.jpg				mag7.jpg			pets.jpg			temptation.jpg
+							birth.jpg			holiday.jpg				men.jpg				pickle.jpg			title.jpg
+							bleed.jpg			ice.jpg					middle.jpg			queen.jpg			trolls.jpg					
+					
+-->
+<html>
+
+	<head>
+		
+			<!-- Meta content is to make the page responsive.  Even for a basic page, you must always include a viewport meta tag. The viewport is the most critical component you need for building multi-device experiences. Without it, your site will not work well on a mobile device.
+
+			The viewport indicates to the browser that the page needs to be scaled to fit the screen. There are many different configurations that you can specify for your viewport to control the display of the page. As a default, we recommend:-->
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="myCinema.css">
+			
+			<title>Birth of A Nation</title>
+		
+		
+
+		<!-- This script links myCin.js source file -->
+		<script type="text/javascript" src="myCin.js">
+			/* <![CDATA[ */
+				
+			/* ]]> */
+		</script>
+</head>
+
+		
+		
+		
+		<body>
+		
+			<div>
+				<!-- form tells the computer a form item is going here.  Method tells the computer how to handle the form command, in this case make a link.  action shows to where; link to registration.html -->
+				<form method="link" action="registration.html" >
+					<h1>About this Movie
+						<h3>Birth of a Nation
+						
+						<input type="text" id="search" name="search" placeholder="Search"/>
+						
+						<button class="button" type="registration" 
+							formtarget="registration.html">Register
+						</button>
+
+				</form>
+			
+				<form method="link" action="myCinemaMovies.html" >
+						<button class="button" type="movies" 
+							formtarget="myCinemaMovies.html">Movies
+						</button>
+						
+						
+						
+						
+				</form>
+				<form method="link" action="index.html" >
+					<button class="button" type="index" 
+							formtarget="index.html">Home
+					</button>
+					</h3>
+				</h1>
+			</form>
+				
+			</div>
+			
+		<!-- Birth of a Nation -->
+		<div class="content">
+			<p class="movieDescription">
+				<a href="https://www.youtube.com/embed/i18z1EQCoyg?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=i18z1EQCoyg" onclick="window.open(this.href); return false;">
+					<img class="about"src="birth.jpg" alt="Birth of a Nation" title="Earn 10 My Cinema Points for Renting"  
+						onMouseOver="MouseRollover3(this)" 
+						onMouseOut="MouseOut3(this)" />
+				</a><div><p>Click image to play trailer</p></div>
+				<p>Rated 5/5 stars &#10029; &#10029; &#10029; &#10029; &#10029;</p>
+					Nat Turner is an enslaved Baptist preacher who lives on a Virginia plantation owned by Samuel Turner. With rumors of insurrection in the air, a cleric convinces Samuel that Nate should sermonize to other slaves, thereby quelling any notions of an uprising. As Nate witnesses the horrific treatment of his fellow man, he realizes that he can no longer just stand by and preach. On Aug. 21, 1831, Turner's quest for justice and freedom leads to a violent and historic rebellion in Southampton County.
+					Release date: October 7, 2016 (USA)
+					Director: Nate Parker
+					Box office: 15.6 million USD
+					Screenplay: Nate Parker
+					Producers: Nate Parker, Jason Michael Berman, Aaron L. Gilbert, Kevin Turen, Preston L. Holmes
+				<div>
+					<button class="buttonRent" name="rentReserve" type="button"  onclick="window.confirm('Click OK to reserve this movie.')";
+							formtarget="registration.html">Reserve
+						</button>
+						
+						<button class="buttonRent" name="rentReserve" type="button" onclick="window.confirm('Click OK to rent this movie on HD for $5.99')"; 
+							formtarget="registration.html">HD Rental $5.99
+						</button></p>
+				</div>
+						</div>
+		</body>
+</html>

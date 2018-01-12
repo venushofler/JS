@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<!-- 
+	   CIS213 Javascript Final Project
+
+	  
+	   Author:  Venus Hofler
+	   Date:    11/14/2016
+
+		Filename:   index.html
+							
+		Supporting files:	myCin.js
+
+							angry.jpg									joneses.jpg			moana.jpg			ride.jpg				twice.jpg
+							arlo.jpg			dory.jpg				jungle.jpg			mrPete.jpg			sing.jpg			wedding.jpg
+							arrival.jpg			girl.jpg				kicks.jpg			ove.jpg				southside.jpg		what.jpg
+							barbershop3.jpg		globe.jpg				lala.jpg			parks.jpg			storks.jpg				zoolander.jpg
+							beautiful.jpg		hamlet.jpg				love.jpg			peculiar.jpg		sully.jpg
+							billy.jpg			harry.jpg				mag7.jpg			pets.jpg			temptation.jpg
+							birth.jpg			holiday.jpg				men.jpg				pickle.jpg			title.jpg
+							bleed.jpg			ice.jpg					middle.jpg			queen.jpg			trolls.jpg					
+					
+-->
+<html>
+
+	<head>
+		
+			<!-- Meta content is to make the page responsive.  Even for a basic page, you must always include a viewport meta tag. The viewport is the most critical component you need for building multi-device experiences. Without it, your site will not work well on a mobile device.
+
+			The viewport indicates to the browser that the page needs to be scaled to fit the screen. There are many different configurations that you can specify for your viewport to control the display of the page. As a default, we recommend:-->
+
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="myCinema.css">
+			
+			<title>My Cinema</title>
+		
+		
+
+		<!-- This script links myCin.js source file -->
+		<script type="text/javascript" src="myCin.js">
+			/* <![CDATA[ */
+			/* ]]> */
+		</script>
+
+
+		<script>
+			/* <![CDATA[ */
+				var image = document.getElementById("aaa");
+				var img_array=["angry.jpg",	"arlo.jpg",	"dory.jpg", "jungle.jpg","hamlet.jpg"," queen.jpg", "joneses.jpg",	"moana.jpg", "ride.jpg", "twice.jpg", "sully.jpg"];
+
+				var index=0;
+					
+					function slide()
+					{
+
+					    document["img_id"].src = img_array[index];
+					    index++;
+					    if(index>=img_array.length)
+					    {
+					    index=0;
+					    }
+					}
+
+				setInterval("slide()",2500);
+			/* ]]> */
+		</script>
+
+<script type="text/javascript">
+			/* <![CDATA[ */
+				function MouseRollover(MyImage){
+					MyImage.src="beautiful2.jpg";
+				}
+
+				function MouseOut(MyImage){
+					MyImage.src="beautiful.jpg"
+				}
+
+				function MouseRollover2(MyImage){
+					MyImage.src="billy2.jpg";
+				}
+
+				function MouseOut2(MyImage){
+					MyImage.src="billy.jpg"
+				}
+
+				function MouseRollover3(MyImage){
+					MyImage.src="birth2.jpg";
+				}
+
+				function MouseOut3(MyImage){
+					MyImage.src="birth.jpg"
+				}
+
+				function MouseRollover4(MyImage){
+					MyImage.src="parks2.jpg";
+				}
+
+				function MouseOut4(MyImage){
+					MyImage.src="parks.jpg"
+				}
+
+				function MouseRollover5(MyImage){
+					MyImage.src="hamlet2.jpg";
+				}
+
+				function MouseOut5(MyImage){
+					MyImage.src="hamlet.jpg"
+				}
+
+				function MouseRollover6(MyImage){
+					MyImage.src="southside2.jpg";
+				}
+
+				function MouseOut6(MyImage){
+					MyImage.src="southside.jpg"
+				}
+				
+			/* ]]> */
+		</script>
+		
+		
+		
+	
+
+
+	</head>
+
+		
+		
+		
+		<body>
+			
+			
+			<div>
+				<!-- form tells the computer a form item is going here.  Method tells the computer how to handle the form command, in this case make a link.  action shows to where; link to registration.html -->
+				<form method="link" action="registration.html" >
+					<h1>My Cinema
+
+						<input type="text" id="search" name="search" placeholder="Search"/>
+						
+						<button class="button" type="registration" 
+							formtarget="registration.html">Register
+						</button>
+
+				</form>
+			
+				<form method="link" action="myCinemaMovies.html" >
+						<button class="button" type="movies" 
+							formtarget="myCinemaMovies.html">Movies
+						</button>
+					</h1>	
+				</form>
+					
+				
+			</div>
+					
+			
+			
+
+			
+
+
+			<div name="search">
+				<label>Username<span>*</span>
+				</label>
+					<input type="text" placeholder="Enter Username" name="uname"/>
+
+				<label>Password<span>*</span>
+				</label>
+					<input type="password" placeholder="Enter Password" name="psw" />
+			</div>
+
+						
+			
+			<br/>
+					
+			
+
+
+		<!--  <div class="content"><img class="slider" id="img_id" src="angry.jpg" name="image"/> -->
+				<div class="content">
+				<p>Join My Cinema today and get 1 week free!</br> Cancel Anytime!
+				<a href="registration.html"onclick="window.open(this.href); return false;">
+					<img class="slider" id="img_id" src="angry.jpg" name="image"/>
+				</a>
+				
+				
+					  
+				</p>
+			</div>
+			
+
+			
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+			<br/>
+
+
+			
+			
+			<!-- begin outer div -->
+			<div class="movieImages">
+			
+				<div>
+					<h2>Current Releases</h2>
+				</div>
+						<!-- img "resize" class is for resizing the movie images -->
+
+						<!-- A Beautiful Planet -->
+						
+						 <a href="aBeautifulPlanet.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver" src="beautiful.jpg" alt="A Beautiful Planet" title="Earn 10 My Cinema Points for Renting" 
+								onMouseOver="MouseRollover(this)" 
+								onMouseOut="MouseOut(this)" />
+
+						</a>
+						
+						
+						<!-- Billy Lynn's Long Halftime Walk  -->
+
+						<a href="billyLynnsLongHalftimeWalk.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="billy.jpg" alt="Billy Lynn's Long Halftime Walk" title="Earn 10 My Cinema Points for Renting" 
+								onMouseOver="MouseRollover2(this)" 
+								onMouseOut="MouseOut2(this)" />
+						</a>
+
+						
+	
+						<a href="birthOfANation.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="birth.jpg" alt="Birth of a Nation" title="Earn 10 My Cinema Points for Renting"  
+								onMouseOver="MouseRollover3(this)" 
+								onMouseOut="MouseOut3(this)" />
+						</a>
+						
+						<!-- National Parks Adventure --> 
+						<a href="nationalParksAdventure.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="parks.jpg" alt="National Parks Adventure" title="Earn 10 My Cinema Points for Renting" 
+								onMouseOver="MouseRollover4(this)" 
+								onMouseOut="MouseOut4(this)" />
+						</a>
+
+						<!-- Hamlet -->
+						<a href="hamlet.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="hamlet.jpg" alt="Hamlet" title="Earn 10 My Cinema Points for Renting" 
+								onMouseOver="MouseRollover5(this)" 
+								onMouseOut="MouseOut5(this)" />
+						</a>
+
+						<!-- Southside With You -->
+						<a href="southside.html" onclick="window.open(this.href); return false;" >
+							<img class="onMouseOver" src="southside.jpg" alt="Southside With You" title="Earn 10 My Cinema Points for Renting" 
+								onMouseOver="MouseRollover6(this)" 
+								onMouseOut="MouseOut6(this)" />
+						</a>
+				
+					
+					<div>
+						<footer>
+						  	<div>
+								<br/>
+								<br/>
+						    	
+						    	<h3>Contact Us
+						    		<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+						    			
+						    			<br/>
+						    			Send Secure E-Mail
+						    		</a> 
+						     	</h3>
+						     	
+
+
+						     	<h3>Corporate Address
+						     		<a href="https://www.google.com/maps/d/viewer?mid=16DpbwoBnpuhrPtisubfE8hebnY0&hl=en_US&ll=36.842556899999984%2C-76.17886950000002&z=17" onclick="window.open(this.href); return false;">
+
+						     			<br/>5555 Greenwich Road, Virginia Beach, Virginia 23456, United States of America
+						     		<a/>
+
+
+						     		<br/><br/>My Cinema is a Venus Hofler Company &copy2016.
+						    	</h3>
+					 		</div>
+						</footer>
+					</div>		
+			</div>
+
+			
+			
+			
+			
+		</body>
+</html>
+

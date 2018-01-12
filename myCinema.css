@@ -1,0 +1,299 @@
+/*
+CIS213 Javascript 2-2 p.133
+
+	Author:  Venus Hofler
+	Date:    11/14/2016
+
+	Filename:   myCinema.css	
+*/
+
+
+body{
+	font-family: "Calibri", Calibri, sans-serif;
+	font-size: 1rem;
+	letter-spacing: 2.5px;
+	
+	background-color: black;
+	margin: auto;
+	max-width: 90%;
+	color: white;
+	}
+
+
+p{
+	font-family: "Calibri Black", Calibri , sans-serif;
+	font-size: 1.5em;
+	color: yellow;	
+}
+
+
+h1{
+
+	font-family: "Broadway", Calibri , sans-serif;
+	letter-spacing: 4.5px;
+	font-size: 3.5em;
+	color: red;
+	}
+
+h2{
+	font-family: "Calibri Black", Calibri , sans-serif;
+	font-size: 2em;
+	letter-spacing: 3px;
+	color: white;
+	text-align:left;
+	padding: -1em;
+	}
+
+h3{
+	font-family: "Calibri", Calibri , sans-serif;
+	font-size: 1em;
+	color: white;
+
+}
+
+img.ratings{
+	max-width:388px;
+	max-height: 192px;
+}
+
+
+
+img.onMouseOver{
+	width: 2in; 
+	height: 3in;
+}
+
+img.onMouseOver2{
+	/* images for individual movie webpages*/
+	max-width: 384px; 
+	max-height:432px;
+	/*padding: 1em;*/
+	margin-left: default;
+}
+
+
+
+
+img.slider{
+	max-width: 4in; 
+	max-height:4.5in;
+	padding-bottom: -1em;
+	margin-right: 15px;
+	float: left;
+}
+
+img.about{
+	/* images for individual movie webpages*/
+	max-width: 384px; 
+	max-height:432px;
+	/*padding: 1em;*/
+	margin-left: default;
+	float: left;
+	overflow: visible;
+}
+
+
+p.description{
+	font-family: "Calibri", Calibri, sans-serif;
+	font-size: 14pt;
+	
+	background-color: black;
+	
+	max-width: 90%;
+	color: white;
+	
+	
+}
+
+
+footer{
+	
+	padding: 2em;
+	
+	overflow: visible;
+	
+}
+div.movieImages{
+	text-align: center;	
+	margin-top: 25em;
+	position: absolute;
+	margin-left: 5%;
+	
+	}
+
+
+
+div.movieTrailer{
+	position: absolute; 	/*allows trailer to scroll with page*/
+	
+	width: 97%;
+	height: 38%;
+	padding: -3em;
+	
+
+
+	}
+
+button.button {
+    background-color: red; 
+    border: none;
+    color: white;	
+	margin: .5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    cursor: pointer;
+    float: right;
+	box-shadow: 0 2px #999;
+	border-radius: 12px;
+	}
+
+button.button:hover {
+    background-color: #FF6600;
+	}
+
+
+
+
+
+button.button:active {
+	background-color: #3e8e41;
+	box-shadow: 0 1px #666;
+	transform: translateY(4px);
+	}
+
+
+
+#search[type=text] {				/*for search input box on home page*/
+	margin: .5em;
+    width: 145px;
+	height: 15px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16pt;
+	color: white;
+	float: right;
+    background-color: transparent;
+    background-position: 1px 2px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+   -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+
+input{  	/*controls position of registration page input boxes*/
+	float: right;
+	margin-right: 75%;
+	width: auto;
+	color: gray;
+
+}
+
+
+
+span{
+	color: red;
+}
+
+
+/*left and right containers allow expiration month and year to be on the same line*/
+#leftContainer{
+	float: left;
+	width: auto;
+	
+}
+
+#leftContainer select{ 	/*this id moves the dropbox listing credit cards flush to the right with the rest of*/
+	margin-left: 78px;
+}
+
+#rightContainer{
+	float: left;
+	width: auto;
+	margin-right:60%;
+}
+
+#creditCard{
+	margin-left: 6%;
+	
+}
+
+
+div.checkbox{
+	font-size: 12pt;
+	font-family: "Calibri" , Calibri, sans-serif;
+	color: red;
+}
+
+form {
+    display: inline;
+}
+
+footer{
+	text-align: left;
+}
+
+#img_id{
+	text-align: center;	
+	margin-top: 5%;
+
+	position: absolute;
+	margin-left: 5%;
+	margin-right:5%;
+}
+
+button.buttonRent{
+	background-color: red; 
+    border: none;
+    color: white;	
+	margin: .5em;
+	
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16pt;
+    cursor: pointer;
+    float: right;
+	box-shadow: 0 2px #999;
+	border-radius: 12px;
+	float: left;
+}
+
+.button.buttonRent:hover {
+    background-color: #FF6600;
+	}
+
+
+
+
+
+.button.buttonRent:active {
+	background-color: #3e8e41;
+	box-shadow: 0 1px #666;
+	transform: translateY(4px);
+	}
+	
+	
+	
+.content {
+	/*for movie descriptions*/
+	width: 800px; 
+	max-height: 120px;
+	padding: 20px;
+	overflow: visible;
+	letter-spacing: 2px;
+	line-height: 150%;
+	}
+
+.content img {
+	margin-right: 15px;
+	float: left;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    line-height: 1.5em;

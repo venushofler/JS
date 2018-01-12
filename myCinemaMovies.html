@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<!-- 
+	   CIS213 Javascript Final Project
+
+	  
+	   Author:  Venus Hofler
+	   Date:    11/14/2016
+
+		Filename:   myCinemaMovies.html
+							
+		Supporting files:	angry.jpg			christine.jpg			joneses.jpg			moana.jpg			ride.jpg				twice.jpg
+							arlo.jpg			dory.jpg				jungle.jpg			mrPete.jpg			sing.jpg				wedding.jpg
+							arrival.jpg			girl.jpg				kicks.jpg			ove.jpg				southside.jpg			what.jpg
+							barbershop3.jpg		globe.jpg				lala.jpg			parks.jpg			storks.jpg				zoolander.jpg
+							beautiful.jpg		hamlet.jpg				love.jpg			peculiar.jpg		sully.jpg
+							billy.jpg			harry.jpg				mag7.jpg			pets.jpg			temptation.jpg
+							birth.jpg			holiday.jpg				men.jpg				pickle.jpg			title.jpg
+							bleed.jpg			ice.jpg					middle.jpg			queen.jpg			trolls.jpg					
+					
+	-->
+<html>
+
+	<head>
+		<!-- Meta content is to make the page responsive.  Even for a basic page, you must always include a viewport meta tag. The viewport is the most critical component you need for building multi-device experiences. Without it, your site will not work well on a mobile device.
+
+		The viewport indicates to the browser that the page needs to be scaled to fit the screen. There are many different configurations that you can specify for your viewport to control the display of the page. As a default, we recommend:-->
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			
+			<link rel="stylesheet" href="myCinema.css">
+			
+			<title>My Cinema Movies</title>
+	
+		<script type="text/javascript" src="myCin.js">
+			/* <![CDATA[ */
+			/* ]]> */
+		</script>
+		
+		
+		
+		<script type="text/javascript">
+			/* <![CDATA[ */
+				function MouseRollover(MyImage){
+					MyImage.src="dory2.jpg";
+					
+				}
+
+				function MouseOut(MyImage){
+					MyImage.src="dory.jpg"
+				}
+
+				function MouseRollover2(MyImage){
+					MyImage.src="moana2.jpg";
+				}
+
+				function MouseOut2(MyImage){
+					MyImage.src="moana.jpg"
+				}
+
+				function MouseRollover3(MyImage){
+					MyImage.src="jungle2.jpg";
+				}
+
+				function MouseOut3(MyImage){
+					MyImage.src="jungle.jpg"
+				}
+
+				function MouseRollover4(MyImage){
+					MyImage.src="men2.jpg";
+				}
+
+				function MouseOut4(MyImage){
+					MyImage.src="men.jpg"
+				}
+
+				function MouseRollover5(MyImage){
+					MyImage.src="ice2.jpg";
+				}
+
+				function MouseOut5(MyImage){
+					MyImage.src="ice.jpg"
+				}
+
+				function MouseRollover6(MyImage){
+					MyImage.src="sing2.jpg";
+				}
+
+				function MouseOut6(MyImage){
+					MyImage.src="sing.jpg"
+				}
+				
+			/* ]]> */
+		</script>
+
+	</head>
+
+		
+		
+		
+		<body>
+
+			<div>
+				<!-- form tells the computer a form item is going here.  Method tells the computer how to handle the form command, in this case make a link.  action shows to where; link to registration.html -->
+			<form method="link" action="registration.html" >
+					<h1>My Cinema Movies
+
+						<input type="text" id="search" name="search" value="Search"/>
+						
+						<button class="button" name="registration type="button"  onclick="setTimeout(myFunction, 3000);"
+							formtarget="registration.html">Register
+						</button>
+
+				</form>
+			
+				
+					
+				<form method="link" action="index.html" >
+				
+
+						
+						
+						<button class="button" type="index" 
+							formtarget="index.html">Home
+						</button>
+</h1>
+				</form>
+			</div>
+
+				
+			</div>
+			
+			
+			
+			
+			
+			
+			
+			<!-- This <div> automatically plays the YouTube trailer as a 75% height background 
+				 -->
+
+			<div class="movieTrailer">
+				<iframe frameborder="0" height="140%" width="90%" src="https://youtube.com/embed/Aj7ty6sViiU?autoplay=0&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=Aj7ty6sViiU">
+				</iframe>
+			</div>
+			<!-- end autoplay & loop -->
+				
+
+			<div class="movieImages">
+					</br>
+					<div>
+					<h2>Family</h2>
+					</div>	
+						
+						<!--Finding Dory-->
+						<a href="dory.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="dory.jpg" alt="Finding Dory" title="Reserve for $4.99"
+								onMouseOver="MouseRollover(this)" 
+								onMouseOut="MouseOut(this)"/>
+						</a>
+		
+		
+						<!--Moana-->
+						<a href="moana.html"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="moana.jpg" alt="Moana" title="Reserve for $4.99"
+								onMouseOver="MouseRollover2(this)" 
+								onMouseOut="MouseOut2(this)"/>
+						</a>
+						
+						
+						<!--Jungle Book-->
+						<a href="jungle.html"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="jungle.jpg" alt="Jungle Book" title="Reserve for $4.99"
+								onMouseOver="MouseRollover3(this)" 
+								onMouseOut="MouseOut3(this)"/>
+						</a>
+						
+						
+						<!--Little Men-->
+						<a href="men.html"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="men.jpg" alt="Little Men" title="Reserve for $4.99"
+								onMouseOver="MouseRollover4(this)" 
+								onMouseOut="MouseOut4(this)"/>
+						</a>
+						
+						
+						<!--Ice Age-->
+						<a href="jungle.html" onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="ice.jpg" alt="Ice Age" title="Reserve for $4.99"
+								onMouseOver="MouseRollover5(this)" 
+								onMouseOut="MouseOut5(this)"/>
+						</a>
+						
+						
+						<!--Sing-->
+						<a href="https://www.youtube.com/embed/Y7uGHY-t80I?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=Y7uGHY-t80I"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="sing.jpg" alt="Sing" title="Reserve for $4.99"
+								onMouseOver="MouseRollover6(this)" 
+								onMouseOut="MouseOut6(this)"/>
+						</a>
+						
+						
+						<!--<img class="onMouseOver"src="arlo.jpg" alt="Arlo the Burping Pig"/>-->
+						
+				<div>
+					<h2>Action</h2>
+				</div>
+						<!-- Don't Think Twice -->
+						<a href="https://www.youtube.com/embed/9RFTpObS95U?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=9RFTpObS95U"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="twice.jpg" alt="Don't Think Twice" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Queen of Katwe-->
+						<a href="https://www.youtube.com/embed/z4l3-_yub5A?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=z4l3-_yub5A"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="queen.jpg" alt="Queen of Katwe" title="Reserve for $4.99"/>
+						</a>	
+						
+						<!--  The Girl on the Train -->
+						<a href="https://www.youtube.com/embed/KkoEE1i0CX8?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=KkoEE1i0CX8"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="girl.jpg" alt="The Girl on the Train" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- The Magnificent 7 -->
+						<a href="https://www.youtube.com/embed/deSRpSn8Pyk?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=deSRpSn8Pyk"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="mag7.jpg" alt="The Magnificent 7" title="Reserve for $4.99"/>
+						</a>
+
+						<!-- Ride Along 2 -->
+						<a href="https://www.youtube.com/embed/iWfmmwdCHTg?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=iWfmmwdCHTg"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="ride.jpg" alt="Ride Along 2" title="Reserve for $4.99"/>
+						</a>
+
+						<!-- Bleed for This -->
+						<a href="https://www.youtube.com/embed/zQ6ny-fROX8?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=zQ6ny-fROX8"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="bleed.jpg" alt="Bleed for This" title="Reserve for $4.99"/>
+						</a>
+						<!--<img class="onMouseOver"src="angry.jpg" alt="Angry Birds the Movie"/>-->
+
+				<div>
+					<h2>Drama</h2>
+				</div>	
+						<!--  Harry and the Snowman -->
+						<a href="https://www.youtube.com/embed/5EqFOcr-Fes?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=5EqFOcr-Fes"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="harry.jpg" alt="Harry and the Snowman" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Kicks  -->
+						<a href="https://www.youtube.com/embed/BhJJW3v0faU?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=BhJJW3v0faU"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="kicks.jpg" alt="Kicks" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Middle of Nowhere -->
+						<a href="https://www.youtube.com/embed/yUBnTs3z5jI?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=yUBnTs3z5jI"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="middle.jpg" alt="Middle of Nowhere" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Mister & Pete -->
+						<a href="https://www.youtube.com/embed/yUBnTs3z5jI?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=i1vOw9ykpQk"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="mrPete.jpg" alt="Mr & Pete" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- A Man Called Ove -->
+						<a href="https://www.youtube.com/embed/oCh4iiAXuAc?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=oCh4iiAXuAc"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="ove.jpg" alt="A Man Called Ove" title="Reserve for $4.99"/>
+						</a>
+						
+						<!--  Sully -->
+						<a href="https://www.youtube.com/embed/ofDzbPXBxP4?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=oCh4iiAXuAc"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="sully.jpg" alt="Sully" title="Reserve for $4.99"/>
+						</a>
+
+				<div>
+					<h2>Comedy</h2>
+				</div>	
+						<!-- Our Family Wedding -->
+						<a href="https://www.youtube.com/embed/wKfmsOfYNh8?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=wKfmsOfYNh8"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="wedding.jpg" alt="Our Family Wedding" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Zoolander -->
+						<a href="https://www.youtube.com/embed/YtQq0T3ExLs?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=wKfmsOfYNh8"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="zoolander.jpg" alt="Zoolander No.2" title="Reserve for $4.99"/>
+						</a>
+						
+						<!--  The Magnificent 7-->
+						<a href="https://www.youtube.com/embed/q-RBA0xoaWU?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=q-RBA0xoaWU"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="mag7.jpg" alt="The Magnificent 7" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- The Secret Life of Pets -->
+						<a href="https://www.youtube.com/embed/eWI_Jsw9qUs?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=eWI_Jsw9qUs"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="pets.jpg" alt="The Secret Life of Pets" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Storks -->
+						<a href="https://www.youtube.com/embed/ZENmkJk9fBM?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=eWI_Jsw9qUs"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="storks.jpg" alt="Storks" title="Reserve for $4.99"/>
+						</a>
+						
+						<!-- Barbershop 3 -->
+						<a href="https://www.youtube.com/embed/_7nArir2dQg?autoplay=1&controls=0&showinfo=0&autohide=1version=3&loop=0&playlist=_7nArir2dQg"onclick="window.open(this.href); return false;">
+							<img class="onMouseOver"src="barbershop3.jpg" alt="Barbershop 3" title="Reserve for $4.99"/>
+						</a>
+			<div>
+						<footer>
+						  	<div class="container">
+								<br/>
+								<br/>
+						    	
+						    	<h3>Contact Us
+						    		<a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">
+						    			
+						    			<br/>
+						    			Send Secure E-Mail
+						    		</a> 
+						     	</h3>
+						     	
+
+
+						     	<h3>Corporate Address
+						     		<a href="https://www.google.com/maps/d/viewer?mid=16DpbwoBnpuhrPtisubfE8hebnY0&hl=en_US&ll=36.842556899999984%2C-76.17886950000002&z=17" onclick="window.open(this.href); return false;">
+
+						     			<br/>5555 Greenwich Road, Virginia Beach, Virginia 23456, United States of America
+						     		<a/>
+
+
+						     		<br/><br/>My Cinema is a Venus Hofler Company &copy2016.
+						    	</h3>
+					 		</div>
+						</footer>
+					</div>	
+		</div>
+		</body>
+</html>		
